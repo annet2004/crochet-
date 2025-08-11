@@ -1,0 +1,88 @@
+.products-section {
+  padding: 3rem 1rem;
+  background-color: #fceef1;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #b85c7b;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #b85c7b;
+  cursor: pointer;
+}
+
+.product-cards {
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 1rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.info h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.info p {
+  font-size: 0.9rem;
+  color: #777;
+}
+.wishlist {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.wishlist:hover {
+  transform: scale(1.2);
+}
+
+.wishlist.liked {
+  color: #e57373;
+}
+html {
+  scroll-behavior: smooth;
+}
+#products {
+  scroll-margin-top: 80px; /* adjust based on header height */
+}

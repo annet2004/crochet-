@@ -1,0 +1,67 @@
+.home-section {
+  background: linear-gradient(to bottom, #FCF2F5, #F0E6F0);
+  padding: 6rem 3rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  gap: 7rem;
+  flex-wrap: wrap;
+}
+.home-section {
+  padding-bottom: 0rem; /* or a smaller value like 1rem */
+}
+.text-block {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #7A4E76;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #7A4E76;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.shop-button {
+  background-color: #F7DAEF;
+  color: #7A4E76;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #E8C1D8;
+}
+
+.image-block {
+  flex: 1;
+  min-width: 280px;
+  text-align: right;
+}
+
+.doll-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
