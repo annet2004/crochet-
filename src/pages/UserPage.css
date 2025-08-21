@@ -1,0 +1,77 @@
+.user-section {
+  padding: 6rem 2rem 2rem; /* top padding to avoid header overlap */
+  background-color: #fffafc;
+  color: #7A4E76;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.user-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #F7DAEF;
+  background-color: #fceef7;
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.user-bio {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  color: #9B6A8C;
+}
+
+.user-panels {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #F7DAEF;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(247, 218, 239, 0.3);
+  text-align: center;
+}
+
+.back-button {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #F7DAEF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #7A4E76;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

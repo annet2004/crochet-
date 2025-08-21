@@ -1,37 +1,43 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './UserPage.css';
 
 const UserPage = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="section">
-      <h2>User Profile</h2>
+    <section className="user-section">
+      <h2 className="user-heading">🌸 Your Profile</h2>
 
-      <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-        <div className="card" style={{ width: '300px' }}>
-          <h3>Cart</h3>
+      <div className="user-info">
+        <img
+          src="/images/profilepic.png"
+          alt="User Avatar"
+          className="user-avatar"
+         
+        />
+        <div className="user-details">
+          <h3 className="user-name">Talona</h3>
+          <p className="user-bio">
+            Crafting joy, one stitch at a time. Welcome to your cozy corner!
+          </p>
+        </div>
+      </div>
+
+      <div className="user-panels">
+        <div className="card">
+          <h3>🛒 Cart</h3>
           <p>No items yet.</p>
         </div>
-        <div className="card" style={{ width: '300px' }}>
-          <h3>Wishlist</h3>
+        <div className="card">
+          <h3>💖 Wishlist</h3>
           <p>Your favorite items will appear here.</p>
         </div>
       </div>
 
-      {/* Back to Home Button */}
       <button
         onClick={() => navigate('/')}
-        style={{
-          marginTop: '2rem',
-          padding: '0.6rem 1.2rem',
-          backgroundColor: '#F7DAEF',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-          fontWeight: 'bold',
-          color: '#7A4E76'
-        }}
+        className="back-button"
       >
         ⬅ Back to Home
       </button>

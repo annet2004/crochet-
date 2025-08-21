@@ -58,3 +58,17 @@ button {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   text-align: center;
 }
+.explore-button {
+  background-color: #f4c430;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #e0b020;
+}

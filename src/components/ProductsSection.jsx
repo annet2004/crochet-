@@ -10,7 +10,7 @@ const products = [
   { id: 6, name: 'Snuggle Cat Plushie', price: '$34.00', image: '/images/heart.jpg' },
 ];
 
-export default function ProductsSection() {
+export default function ProductsSection({ onProductClick }) {
   const [startIndex, setStartIndex] = useState(0);
   const [liked, setLiked] = useState(Array(products.length).fill(false));
   const visibleCount = 3;
@@ -44,7 +44,11 @@ export default function ProductsSection() {
           {visibleProducts.map((product, i) => {
             const globalIndex = startIndex + i;
             return (
-              <div key={product.id} className="card">
+              <div
+                key={product.id}
+                className="card"
+                onClick={() => onProductClick(product)}
+              >
                 <img src={product.image} alt={product.name} />
                 <div className="info">
                   <h3>{product.name}</h3>
@@ -52,7 +56,10 @@ export default function ProductsSection() {
                 </div>
                 <button
                   className={`wishlist ${liked[globalIndex] ? 'liked' : ''}`}
-                  onClick={() => toggleLike(globalIndex)}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent popup from opening
+                    toggleLike(globalIndex);
+                  }}
                 >
                   {liked[globalIndex] ? '♥' : '♡'}
                 </button>
